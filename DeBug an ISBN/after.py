@@ -1,5 +1,5 @@
 def validate_isbn(isbn, length):
-    # check length mismatch
+
     if len(isbn) != length:
         print(f'ISBN-{length} code should be {length} digits long.')
         return
@@ -7,7 +7,6 @@ def validate_isbn(isbn, length):
     main_digits = isbn[:length - 1]
     given_check_digit = isbn[length - 1]
 
-    # handle invalid characters
     try:
         if length == 10:
             main_digits_list = [int(d) for d in main_digits]
@@ -61,7 +60,7 @@ def calculate_check_digit_13(main_digits_list):
 def main():
     user_input = input('Enter ISBN and length: ')
 
-    # handle missing comma
+
     try:
         values = user_input.split(',')
         isbn = values[0]
@@ -72,7 +71,6 @@ def main():
 
         length_str = values[1]
 
-        # handle non-numeric length
         try:
             length = int(length_str)
         except ValueError:
@@ -90,4 +88,4 @@ def main():
         return
 
 
-# main()  # IMPORTANT: keep commented for tests
+main()
