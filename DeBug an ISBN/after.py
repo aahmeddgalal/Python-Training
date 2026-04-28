@@ -59,8 +59,6 @@ def calculate_check_digit_13(main_digits_list):
 
 def main():
     user_input = input('Enter ISBN and length: ')
-
-
     try:
         values = user_input.split(',')
         isbn = values[0]
