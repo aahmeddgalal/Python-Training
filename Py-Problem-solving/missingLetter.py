@@ -18,9 +18,4 @@ def findthemissingletter(sequance): #abde
         print(f'You missed [{missed}] letter/s')
 
 
-sequance1 = "abdefg"
-sequance2 = "mnp"
-sequance3 = "ghikl"
-
-
 findthemissingletter("af")
