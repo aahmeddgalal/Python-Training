@@ -21,7 +21,7 @@ class Email:
         print(f"Received: {self.timestamp.strftime('%Y-%m-%d %H:%M')}")
         print(f'Body: {self.body}')
         print('------------\n')
-
+        
     def __str__(self):
         status = 'Read' if self.read else 'Unread'
         return f"[{status}] From: {self.sender.name} | Subject: {self.subject} | Time: {self.timestamp.strftime('%Y-%m-%d %H:%M')}"
