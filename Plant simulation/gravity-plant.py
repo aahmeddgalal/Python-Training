@@ -8,7 +8,9 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Plant Simulation")
 
 WHITE = (255, 255, 255)
-
+class plant:
+    def __init__(self, name, color, speed, mass):
+        
 
 def main():
     run = True
