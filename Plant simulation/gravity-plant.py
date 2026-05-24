@@ -9,7 +9,7 @@ pygame.display.set_caption("Plant Simulation")
 
 WHITE = (255, 255, 255)
 class plant:
-    def __init__(self, name, color, speed, mass):
+    def __init__(self, x, y, radius, color, speed, mass):
         
 
 def main():
