@@ -7,7 +7,6 @@ class MediaError(Exception):
 
 class Movie:
     """Parent class representing a movie."""
-    
     def __init__(self, title, year, director, duration):
         if not title.strip():
             raise ValueError('Title cannot be empty')
